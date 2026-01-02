@@ -1,0 +1,35 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="23.869359">
+<testsuite name="15.0.reporters.spec.ts" timestamp="2025-12-25T19:25:54.549Z" hostname="chromium" tests="3" failures="1" skipped="0" time="63.535" errors="0">
+<testcase name="logotest" classname="15.0.reporters.spec.ts" time="22.564">
+</testcase>
+<testcase name="title test" classname="15.0.reporters.spec.ts" time="19.979">
+<failure message="15.0.reporters.spec.ts:13:5 title test" type="FAILURE">
+<![CDATA[  [chromium] › 15.0.reporters.spec.ts:13:5 › title test ────────────────────────────────────────────
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Demo Web Shop1"
+    Received string:    "Demo Web Shop"
+
+      12 |
+      13 | test('title test', async ({ page }) => {
+    > 14 |     expect(await page.title()).toContain("Demo Web Shop1");
+         |                                ^
+      15 | });
+      16 |
+      17 | test('search test', async ({ page }) => {
+        at D:\dev\WorkPW\Playwright_Concepts\tests\15.0.reporters.spec.ts:14:32
+
+    Error Context: ..\test-results\15.0.reporters-title-test-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\15.0.reporters-title-test-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="search test" classname="15.0.reporters.spec.ts" time="20.992">
+</testcase>
+</testsuite>
+</testsuites>

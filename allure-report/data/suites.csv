@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5715","logotest","chromium","2025-12-26","passed","2025-12-26","","15.0.reporters.spec.ts","",""
+"","5796","title test","chromium","2025-12-26","failed","2025-12-26","","15.0.reporters.spec.ts","",""
+"","6109","search test","chromium","2025-12-26","passed","2025-12-26","","15.0.reporters.spec.ts","",""

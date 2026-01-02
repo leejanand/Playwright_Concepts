@@ -1,0 +1,240 @@
+{
+  "config": {
+    "configFile": "D:\\dev\\WorkPW\\Playwright_Concepts\\playwright.config.ts",
+    "rootDir": "D:/dev/WorkPW/Playwright_Concepts/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "html-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results.xml"
+        }
+      ],
+      [
+        "D:\\dev\\WorkPW\\Playwright_Concepts\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
+      ],
+      [
+        "D:\\dev\\WorkPW\\Playwright_Concepts\\customreporter.ts",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/dev/WorkPW/Playwright_Concepts/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/dev/WorkPW/Playwright_Concepts/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "15.0.reporters.spec.ts",
+      "file": "15.0.reporters.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "logotest",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 22564,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-25T19:25:55.480Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d2026a926c5a12222eba-1aa638e9804acd09c738",
+          "file": "15.0.reporters.spec.ts",
+          "line": 9,
+          "column": 5
+        },
+        {
+          "title": "title test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 19979,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Demo Web Shop1\"\u001b[39m\nReceived string:    \u001b[31m\"Demo Web Shop\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Demo Web Shop1\"\u001b[39m\nReceived string:    \u001b[31m\"Demo Web Shop\"\u001b[39m\n    at D:\\dev\\WorkPW\\Playwright_Concepts\\tests\\15.0.reporters.spec.ts:14:32",
+                    "location": {
+                      "file": "D:\\dev\\WorkPW\\Playwright_Concepts\\tests\\15.0.reporters.spec.ts",
+                      "column": 32,
+                      "line": 14
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m test(\u001b[32m'title test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoContain(\u001b[32m\"Demo Web Shop1\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m test(\u001b[32m'search test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\dev\\WorkPW\\Playwright_Concepts\\tests\\15.0.reporters.spec.ts",
+                        "column": 32,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Demo Web Shop1\"\u001b[39m\nReceived string:    \u001b[31m\"Demo Web Shop\"\u001b[39m\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m test(\u001b[32m'title test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoContain(\u001b[32m\"Demo Web Shop1\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m test(\u001b[32m'search test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at D:\\dev\\WorkPW\\Playwright_Concepts\\tests\\15.0.reporters.spec.ts:14:32\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-25T19:25:55.486Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\dev\\WorkPW\\Playwright_Concepts\\test-results\\15.0.reporters-title-test-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\dev\\WorkPW\\Playwright_Concepts\\tests\\15.0.reporters.spec.ts",
+                    "column": 32,
+                    "line": 14
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d2026a926c5a12222eba-2eb38f376a37bb122d36",
+          "file": "15.0.reporters.spec.ts",
+          "line": 13,
+          "column": 5
+        },
+        {
+          "title": "search test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 20992,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-25T19:25:55.471Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d2026a926c5a12222eba-1d56131c3739958f02b2",
+          "file": "15.0.reporters.spec.ts",
+          "line": 17,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-12-25T19:25:54.519Z",
+    "duration": 23869.359,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
