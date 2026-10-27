@@ -24,8 +24,6 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter:  [
     ['list'], // Default list reporter
-    ['line'], // Line reporter
-    ['dot'], // Dot reporter
     ['html', { open: 'never', outputFolder: 'html-report' }], // HTML reporter with custom folder
     ['json', { outputFile: 'results.json' }], // JSON reporter
     ['junit', { outputFile: 'results.xml' }], // JUnit reporter
